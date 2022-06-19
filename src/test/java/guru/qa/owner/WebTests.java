@@ -12,7 +12,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class WebTests {
     @BeforeAll
-    static void setUp () {
+    static void setUp() {
         WebConfig config = ConfigFactory.create(WebConfig.class, System.getProperties());
 
         Configuration.baseUrl = config.baseUrl();

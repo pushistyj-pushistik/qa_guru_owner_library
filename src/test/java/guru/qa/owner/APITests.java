@@ -14,14 +14,14 @@ public class APITests {
     static APIConfig config;
 
     @BeforeAll
-     static void setUp() {
-         config = ConfigFactory.create(APIConfig.class, System.getProperties());
+    static void setUp() {
+        config = ConfigFactory.create(APIConfig.class, System.getProperties());
 
         RestAssured.baseURI = config.baseUri();
     }
 
     @Test
-    void testLogin () {
+    void testLogin() {
         String body = "{ \"email\": \"eve.holt@reqres.in\", " +
                 "\"password\": \"cityslicka\" }";
 
