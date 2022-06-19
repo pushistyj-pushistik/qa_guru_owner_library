@@ -6,12 +6,10 @@ import org.aeonbits.owner.Config;
         "classpath:api.properties"})
 public interface APIConfig extends Config {
 
-    @Key("baseUrl")
-    @DefaultValue("baseUrl")
-    String baseUrl();
+    @Key("baseUri")
+    String baseUri();
 
     @Key("token")
-    @DefaultValue("token")
     String token();
 }
 
